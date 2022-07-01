@@ -1440,7 +1440,7 @@ function save_data_cte() {
     $("#btn_edit_cte").prop("disabled", false)
   }
 }
-$(document).on("keyup", "#efectivo", function (e) {
+$(document).on("change", "#efectivo", function (e) {
   if ($("#tipo_pago").val() == 1) {
     var efectivo = parseFloat($('#efectivo').val());
     var totalfinal = parseFloat($('#total').val());

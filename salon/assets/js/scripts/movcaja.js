@@ -493,6 +493,9 @@ $(document).on("click", ".delete", function() {
 
 function save_data_vale(){
 
+  // disable #form_add_vale button
+  $('#btn_add_vale').prop('disabled', true);
+
   var errors = false;
   let urls=url+'/agregarvale';
 
@@ -551,6 +554,9 @@ function save_data_vale(){
   }
 }
 function save_data_ing(){
+
+  // disable #form_add_ing button
+  $('#btn_add_ing').prop('disabled', true);
 
   var errors = false;
   let urls=url+'/agregar_ing';

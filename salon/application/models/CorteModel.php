@@ -278,6 +278,19 @@ class CorteModel extends CI_Model {
 			return NULL;
 		}
 	}
+
+	function get_apertura($id){
+		$this->db->where("id_apertura",$id);
+		$this->db->limit(1);
+		$query = $this->db->get("apertura_caja");
+		if ($query->num_rows() > 0) {
+			return $query->row();
+		}
+		else {
+			return NULL;
+		}
+	}
+
 	function get_turno_desc($tabla,$where){
 			foreach ($where as $key => $value) {
 				$this->db->where($key, $value);
