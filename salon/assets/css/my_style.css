@@ -1,0 +1,21 @@
+/* .btn {
+    box-shadow: 0 5px 10px #00000030, 0 3px 3px rgba(0,0,0,0.23) !important;
+    /* box-shadow: none !important; */
+    /* border-radius: 10px  !important; */
+    /* padding: 7px 12px !important;
+    border-radius: 3px !important;
+    font-size: inherit !important; */
+    
+/* } */ 
+
+/* Doing Select2 Responsibe */
+.select2 {
+    width:100%!important;
+}
+
+/* Button class for Customer module (Clientes) */
+.btn-for-accordion {
+    padding: 0;
+    border: none;
+    background: none;
+}
