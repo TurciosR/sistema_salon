@@ -351,10 +351,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         <td>
                           <input type="text" id="total_efectivo" name="total_efectivo" value="" class="form-control decimal" required data-parsley-trigger="change">
 
-                          <input type="hidden" id="total_fin" name="total_fin" value="<?= $total_efectivo_fin + $total_entrada_caja + $total_abonos_cuentas_cobrar - ($total_salida_caja + $total_row_dev->total) ?>" class="form-control decimal decimal">
+                          <input type="hidden" id="total_fin" name="total_fin" value="<?= $total_efectivo_fin + $total_entrada_caja + $total_abonos_cuentas_cobrar - ($total_salida_caja/* + $total_row_dev->total*/) ?>" class="form-control decimal decimal">
                         </td>
                         <td style="text-align: center">
-                          <label id="id_total_general"><?php echo number_format(($total_efectivo_fin + $total_entrada_caja + $total_abonos_cuentas_cobrar - ($total_salida_caja + $total_row_dev->total)), 2, ".", ""); ?></label>
+                          <label id="id_total_general"><?php echo number_format(($total_efectivo_fin + $total_entrada_caja + $total_abonos_cuentas_cobrar - ($total_salida_caja/* + $total_row_dev->total*/)), 2, ".", ""); ?></label>
                         </td>
                         <td style="text-align: center">
                           <label id="id_diferencia"></label>
